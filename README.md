@@ -3,11 +3,9 @@ PyCharm
 
 Dockerized PyCharm
 
-### Build  
+### Run  
 
- `docker build -t mesuutt/pycharm:professional`
-
-### Run:
-
-Edit `pycharm.sh`, make changes and run.
+- Pull repo.
+- Build image with `docker build -t mesuutt/pycharm:professional .`
+- Edit `pycharm.sh`, make changes and run it.
 
