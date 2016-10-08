@@ -1,0 +1,5 @@
+# Are you want to go to method definetions of python packages in  pycharm?
+# Add the packages here.
+requests
+Django
+pytest
