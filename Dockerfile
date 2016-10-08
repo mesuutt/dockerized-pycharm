@@ -4,8 +4,9 @@ MAINTAINER Mesut Tasci
 
 ENV PYTHONUNBUFFERED 1
 
+RUN echo deb http://http.debian.net/debian jessie-backports main >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install --no-install-recommends -y openjdk-7-jdk openjdk-7-jre
+RUN apt-get install --no-install-recommends -y openjdk-8-jdk openjdk-8-jre
 
 RUN pip install --upgrade pip
 
