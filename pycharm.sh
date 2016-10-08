@@ -3,7 +3,7 @@
 set -e 
 
 
-REPOS_DIR=$HOME/projects
+PROJECTS_DIR=$HOME/projects
 DATA_DIR=`pwd`/.pycharm
 
 mkdir -p $DATA_DIR/java
@@ -17,7 +17,7 @@ docker run -d \
 	-e DISPLAY=unix$DISPLAY \
     -v $DATA_DIR/java:/root/.java \
     -v $DATA_DIR/pycharm:/root/.PyCharm2016.2 \
-    -v $REPOS_DIR:/root/projects/repos \
+    -v $PROJECTS_DIR:/root/projects/repos \
 	--name pycharm \
 	mesuutt/pycharm:professional
 
