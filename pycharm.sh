@@ -14,9 +14,9 @@ docker run -d \
 	-v /etc/localtime:/etc/localtime:ro \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	-e DISPLAY=unix$DISPLAY \
-    -v $DATA_DIR/java:/root/.java \
-    -v $DATA_DIR/pycharm:/root/.PyCharm2016.2 \
-    -v $PROJECTS_DIR:/root/projects/repos \
+    -v $DATA_DIR/java:/home/developer/.java \
+    -v $DATA_DIR/pycharm:/home/developer/.PyCharm2016.2 \
+    -v $PROJECTS_DIR:/home/developer/projects \
 	--name pycharm \
 	mesuutt/pycharm:professional
 

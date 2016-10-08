@@ -10,6 +10,10 @@ RUN apt-get install --no-install-recommends -y openjdk-8-jdk openjdk-8-jre
 
 RUN pip install --upgrade pip
 
+ENV USER=developer
+ENV UID=1000
+RUN useradd -m -u $UID $USER
+
 # You can download tarball yourself for fast build.
 # If you download tarball in Dockerfile with ADD instruction, 
 # docker will download tarball every time.
@@ -23,5 +27,7 @@ RUN rm /opt/pycharm.tar.gz
 
 ADD ./requirements.txt /srv
 RUN pip install -r /srv/requirements.txt
+
+USER $USER
 
 CMD ["/opt/pycharm-2016.2.3/bin/pycharm.sh"]
