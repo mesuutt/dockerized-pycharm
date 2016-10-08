@@ -1,11 +1,8 @@
-FROM python:latest
+FROM python:3.4
 
 MAINTAINER Mesut Tasci
 
 ENV PYTHONUNBUFFERED 1
-
-RUN groupadd developer \
-    && useradd -g developer developer
 
 RUN apt-get update
 RUN apt-get install --no-install-recommends -y openjdk-7-jdk openjdk-7-jre
