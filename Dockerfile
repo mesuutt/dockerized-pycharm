@@ -9,7 +9,6 @@ RUN apt-get install --no-install-recommends -y openjdk-7-jdk openjdk-7-jre
 
 RUN pip install --upgrade pip
 
-
 ADD https://download-cf.jetbrains.com/python/pycharm-professional-2016.2.3.tar.gz  /opt
 
 ADD requirements.txt /srv/requirements.txt
