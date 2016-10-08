@@ -2,7 +2,6 @@
 
 set -e 
 
-
 PROJECTS_DIR=$HOME/projects
 DATA_DIR=`pwd`/.pycharm
 
