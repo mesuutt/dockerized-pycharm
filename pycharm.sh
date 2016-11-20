@@ -23,5 +23,5 @@ docker run -d \
     -v $DATA_DIR/pycharm:/home/developer/.PyCharm2016.2 \
     -v $PROJECTS_DIR:/home/developer/projects \
     --name pycharm \
-    mesuutt/pycharm:professional
+    mesuutt/pycharm:pro
 

@@ -6,6 +6,6 @@ Dockerized PyCharm
 ### Run  
 
 - Clone repo.
-- Build image with `docker build -t mesuutt/pycharm:professional .`
+- Build image with `docker build -t mesuutt/pycharm:pro .`
 - Edit `pycharm.sh`, make changes and run it.
 
