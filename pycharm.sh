@@ -20,7 +20,7 @@ docker run -d \
     -v $XAUTH:$XAUTH \
     -e XAUTHORITY=$XAUTH \
     -v $DATA_DIR/java:/home/developer/.java \
-    -v $DATA_DIR/pycharm:/home/developer/.PyCharm2016.2 \
+    -v $DATA_DIR/pycharm:/home/developer/.PyCharm2018.3 \
     -v $PROJECTS_DIR:/home/developer/projects \
     --name pycharm \
     mesuutt/pycharm:pro
