@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python:3.6
 
 MAINTAINER Mesut Tasci
 
@@ -21,7 +21,7 @@ RUN useradd -m -u $UID $USER
 # edit and uncomment following ADD instruction and remove/comment out other releted three line.
 #ADD ./pycharm.tar.gz /opt
 
-ADD https://download-cf.jetbrains.com/python/pycharm-professional-2017.2.3.tar.gz  /opt/pycharm.tar.gz
+ADD https://download-cf.jetbrains.com/python/pycharm-professional-2018.3.5.tar.gz  /opt/pycharm.tar.gz
 RUN tar -xzf /opt/pycharm.tar.gz -C /opt
 RUN rm /opt/pycharm.tar.gz
 
@@ -30,4 +30,4 @@ RUN pip install -r /srv/requirements.txt
 
 USER $USER
 
-CMD ["/opt/pycharm-2017.2.3/bin/pycharm.sh"]
+CMD ["/opt/pycharm-2018.3.5/bin/pycharm.sh"]
